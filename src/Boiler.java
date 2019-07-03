@@ -1,6 +1,10 @@
 
 public class Boiler extends Container{
 	
+	public Boiler() {
+		super();
+	}
+	
 	void fillWater(int quantity) {
 		int aux = this.quantity + quantity;
 		if(aux <= 12){

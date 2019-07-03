@@ -16,12 +16,20 @@ public abstract class Container {
 		this.state = state;
 	}
 	
-	private void setState(String state) {		
+	public void setState(String state) {		
 		this.state = state;
 		
 	}
 	
-	private String getState() {
+	protected String getState() {
 		return state;
+	}
+	
+	protected void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+	
+	protected int getQuantity() {
+		return quantity;
 	}
 }
